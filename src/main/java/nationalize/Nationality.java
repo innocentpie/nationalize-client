@@ -1,5 +1,9 @@
 package nationalize;
 
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
@@ -42,6 +46,11 @@ public class Nationality {
         this.countries = countries;
     }
 
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.NO_CLASS_NAME_STYLE);
+    }
+
     public static class Country {
 
         private String countryId;
@@ -68,6 +77,10 @@ public class Nationality {
             this.probability = probability;
         }
 
+        @Override
+        public String toString() {
+            return ReflectionToStringBuilder.toString(this, ToStringStyle.NO_CLASS_NAME_STYLE);
+        }
     }
 
 

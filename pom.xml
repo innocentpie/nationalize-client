@@ -33,7 +33,7 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.14.0</version>
             <scope>compile</scope>
-        </dependency>   
+        </dependency>
     </dependencies>
     <build>
         <plugins>
